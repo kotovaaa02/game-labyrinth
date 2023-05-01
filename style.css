@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* start modal */
+
+.btn.start,
+.btn.start:focus-visible {
+    background-color: #c8a2c8;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    --bs-btn-hover-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #c8a2c8;
+}
+
+.btn:first-child:active {
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #c8a2c8;
+    --bs-btn-active-border-color: none;
+}
+
+:not(.btn-check)+.btn:active {
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #c8a2c8;
+    --bs-btn-active-border-color: none;
+}
+
+/* labyrinth */
+
+#maze {
+    border-style: solid;
+    box-sizing: initial;
+}
+
+.block {
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+.wall {
+    background-color: #000;
+}
+
+.me {
+    position: relative;
+}
+
+.me:after {
+    background-color: #c8a2c8;
+    border-radius: 100%;
+    content: '';
+    height: 20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+
+.point {
+    background-color: #543964;
+    border-radius: 100%;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+}
+
+.finish {
+    background-image: url(img/finish.svg);
+}
+
+/* test modal */
+
+.btn.test,
+.btn.test:focus-visible{
+    background-color: #c8a2c8;
+    color: #fff;
+    border: none;
+}
+
+/* finish modal */
+
+.btn.close,
+.btn.again,
+.btn.close:focus-visible,
+.btn.again:focus-visible {
+    background-color: #c8a2c8;
+    color: #fff;
+    border: none;
+}
